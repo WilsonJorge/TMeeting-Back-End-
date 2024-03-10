@@ -1,0 +1,32 @@
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 993229853039-tv2nkgc4tsdgfssgpgjp29eik0rcl19f.apps.googleusercontent.com
+            client-secret: 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
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+  datasource:
+    url: jdbc:postgresql://localhost:5432/TConference
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Felizmente123456
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+    ddl-auto: update
+    show-sql: true
+
+  springdoc:
+     swagger-ui:
+     path: /swagger-ui.html
+
+
+
+server:
+  port: 9092
